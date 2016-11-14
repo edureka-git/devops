@@ -241,7 +241,7 @@
                         <artifactId>maven-pmd-plugin</artifactId>
                         <version>3.2</version>
                         <configuration>
-                            <targetJdk>1.6</targetJdk>
+                            <targetJdk>1.8</targetJdk>
                             <aggregate>true</aggregate>
                             <format>xml</format>
                             <!-- CPD options -->
@@ -319,7 +319,7 @@
                                     <artifactId>maven-pmd-plugin</artifactId>
                                     <version>3.2</version>
                                     <configuration>
-                                        <targetJdk>1.6</targetJdk>
+                                        <targetJdk>1.8</targetJdk>
                                         <aggregate>true</aggregate>
                                         <format>xml</format>
                                         <rulesets>
@@ -343,7 +343,7 @@
                                     <artifactId>maven-javadoc-plugin</artifactId>
                                     <version>2.9.1</version>
                                     <configuration>
-                                        <source>1.6</source>
+                                        <source>1.8</source>
                                         <doclet>
                                             gr.spinellis.umlgraph.doclet.UmlGraphDoc
                                         </doclet>
@@ -433,7 +433,7 @@
                         <artifactId>maven-pmd-plugin</artifactId>
                         <version>2.5</version>
                         <configuration>
-                            <targetJdk>1.6</targetJdk>
+                            <targetJdk>1.8</targetJdk>
                             <aggregate>true</aggregate>
                             <format>xml</format>
                             <rulesets>
@@ -466,7 +466,7 @@
                         <artifactId>maven-javadoc-plugin</artifactId>
                         <version>2.7</version>
                         <configuration>
-                            <source>1.6</source>
+                            <source>1.8</source>
                             <doclet>
                                 gr.spinellis.umlgraph.doclet.UmlGraphDoc
                             </doclet>
