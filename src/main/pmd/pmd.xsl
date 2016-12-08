@@ -85,7 +85,7 @@ doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
       <tr>
         <td class="bannercell" rowspan="2">
         </td>
-    	<td class="text-align:right"><h2>PMD <xsl:value-of select="//pmd/@version"/> Report: Demo Utilities. Generated on <xsl:call-template name="timestamp"/></h2></td>
+    	<td class="text-align:right"><h2>PMD <xsl:value-of select="//pmd/@version"/> Report: Addressbook Web Application. Generated on <xsl:call-template name="timestamp"/></h2></td>
       </tr>
       </table>
     	<hr size="1"/>
