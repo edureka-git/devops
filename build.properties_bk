@@ -57,5 +57,4 @@ maven.settings.interactiveMode=false
 maven.build.version=V1.2
 maven.test.skip=false
 pmd.installpath=c:/Apps/pmd-bin-5.2.3/lib
-#this is new addition added
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
