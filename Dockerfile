@@ -4,7 +4,7 @@ COPY src /addressbook/src/
 WORKDIR /addressbook/
 RUN mvn package
 
-COPY --from=MAVEN_TOOL_CHAIN /addressbook/target ./target
+COPY MAVEN_TOOL_CHAIN:/addressbook/target /target
 
 FROM tomcat:9.0-jre8-alpine
 COPY --from=MAVEN_TOOL_CHAIN /addressbook/target/addre*.war $CATALINA_HOME/webapps/addressbook.war
