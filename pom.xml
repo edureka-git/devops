@@ -5,7 +5,7 @@
     <groupId>com.edurekademo.tutorial</groupId>
     <artifactId>addressbook</artifactId>
     <packaging>war</packaging>
-    <version>${build.number}-SNAPSHOT</version>
+    <version>${build.number}</version>
     <name>Vaadin Addressbook example</name>
 
 	
