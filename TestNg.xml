@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Maven project">
+
+  <test name="Testscriptsexecution">
+    <classes>
+      
+      <class name ="com.POF_AddressBook_Scripts.AddContactTest"/>
+      
+      <class name="com.POF_AddressBook_Scripts.EditContactTest"/>
+      
+      <class name="com.POF_AddressBook_Scripts.SortContactTest"/>
+     
+    </classes>
+  </test>
+</suite>

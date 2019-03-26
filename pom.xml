@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com</groupId>
+  <artifactId>POF_AddressBook</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>POF_AddressBook</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <repositories>
+     <repository>
+        <snapshots>
+          <enabled>false</enabled>
+        </snapshots>
+        <id>bintray-epam-reportportal</id>
+        <name>bintray</name>
+        <url>http://dl.bintray.com/epam/reportportal</url>
+     </repository>
+</repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+     <dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.14.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.11</version>
+		</dependency>
+		
+		 <dependency>
+  <groupId>com.epam.reportportal</groupId>
+  <artifactId>agent-java-testng</artifactId>
+  <version>4.2.1</version>
+</dependency>
+
+<!-- TODO Leave only one dependency, depends on what logger you use: -->
+<dependency>
+  <groupId>com.epam.reportportal</groupId>
+  <artifactId>logger-java-logback</artifactId>
+  <version>4.0.0</version>
+</dependency>
+<dependency>
+  <groupId>com.epam.reportportal</groupId>
+  <artifactId>logger-java-log4j</artifactId>
+  <version>3.0.0</version>
+</dependency>
+				
+  </dependencies>
+</project>
