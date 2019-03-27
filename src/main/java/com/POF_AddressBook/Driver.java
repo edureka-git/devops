@@ -39,7 +39,7 @@ public class Driver {
 
 				options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 				options.addArguments("--no-sandbox"); // Bypass OS security model
-				//options.addArguments("--headless");//Run's tests without opning the browser --sudheer
+				options.addArguments("--headless");//Run's tests without opning the browser --sudheer
 				 driver = new ChromeDriver(options);
 
 			driver.manage().window().maximize();
