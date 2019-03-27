@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Command line suite]">
-  <test name="Command line test(failed)">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test(failed)">
     <classes>
       <class name="com.POF_AddressBook_Scripts.AddContactTest">
         <methods>
@@ -11,13 +11,6 @@
           <include name="Addcontacttest2"/>
         </methods>
       </class> <!-- com.POF_AddressBook_Scripts.AddContactTest -->
-      <class name="com.POF_AddressBook_Scripts.EditConactTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="editcontact"/>
-          <include name="initialization"/>
-        </methods>
-      </class> <!-- com.POF_AddressBook_Scripts.EditConactTest -->
       <class name="com.POF_AddressBook_Scripts.SortContactTest">
         <methods>
           <include name="closeBrowser"/>
@@ -25,6 +18,13 @@
           <include name="initialization"/>
         </methods>
       </class> <!-- com.POF_AddressBook_Scripts.SortContactTest -->
+      <class name="com.POF_AddressBook_Scripts.EditConactTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="editcontact"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- com.POF_AddressBook_Scripts.EditConactTest -->
     </classes>
-  </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [Command line suite] -->
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
