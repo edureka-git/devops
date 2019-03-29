@@ -10,6 +10,8 @@
       <class name="com.POF_AddressBook_Scripts.EditContactTest"/>
       
       <class name="com.POF_AddressBook_Scripts.SortContactTest"/>
+      
+      <class name="com.POF_AddressBook_Scripts.SearchContactTest"/>
      
     </classes>
   </test>

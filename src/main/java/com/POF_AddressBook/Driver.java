@@ -23,6 +23,7 @@ public class Driver {
 				properties.load(fi);
 				String browserType = properties.getProperty("browser");
 				browserType.equals("chrome");
+				
 				String chromePath = null;
 				String osName=System.getProperty("os.name");
 				ChromeOptions options = new ChromeOptions();
@@ -32,11 +33,14 @@ public class Driver {
 					options.setBinary("/opt/google/chrome/google-chrome");
 					chromePath=System.getProperty("user.dir")+"/drivers/linux/chromedriver";
 				}
+				System.setProperty("webdriver.chrome.driver", chromePath);
 
+				// uncomment this to run in ubuntu
+				/*String chromePath = "/home/sudheer/Documents/Reportportal/drivers/chromedriver";
 				// Setting the webdriver.chrome.driver property to set executable's
 				System.setProperty("webdriver.chrome.driver", chromePath);
+				ChromeOptions options = new ChromeOptions();*/
 				
-
 				options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 				options.addArguments("--no-sandbox"); // Bypass OS security model
 				options.addArguments("--headless");//Run's tests without opning the browser --sudheer

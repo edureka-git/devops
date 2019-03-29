@@ -2,6 +2,8 @@ package com.POF_AddressBook_Scripts;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -21,6 +23,9 @@ public class AddContactTest extends Driver{
 		addcontactpage = new AddContactPage(driver);
 		addcontactpage.addcontactaddressbook("Sudheer12345", "Neelam", "9876543210", "sudheerkumarn@virtusa.com", "12/4/95"); 
 		System.out.println("In the test1....!!");
+		//WebDriverWait wait = new WebDriverWait(WebDriverRefrence,TimeOut);
+		WebDriverWait wait = new WebDriverWait (driver, 20);
+		
 }
 	@Test
 	public void Addcontacttest2( ) throws Exception {
@@ -40,6 +45,53 @@ public class AddContactTest extends Driver{
 			System.out.println("Contact was not added");
 		}
 }
+	
+	@Test
+	public void Addcontacttest3( ) throws Exception {
+		//driver.navigate().refresh();
+		System.out.println("In test 111111");
+		System.out.println("Driver#########"+driver);
+		addcontactpage = new AddContactPage(driver);
+		addcontactpage.addcontactaddressbook("Sudheer3", "Neelam", "9876543210", "sudheerkumarn@virtusa.com", "12/4/95"); 
+		System.out.println("In the test1....!!");
+		
+		
+}
+	
+	@Test
+	public void Addcontacttestempty( ) throws Exception {
+		//driver.navigate().refresh();
+		System.out.println("In test 33333");
+		System.out.println("Driver#########"+driver);
+		addcontactpage = new AddContactPage(driver);
+		addcontactpage.addcontactaddressbook("", "", "", "", ""); 
+		System.out.println("In the test3....!!");
+		
+}
+	
+	@Test
+	public void Addcontactdobformat( ) throws Exception {
+		//driver.navigate().refresh();
+		System.out.println("In test 111111");
+		System.out.println("Driver#########"+driver);
+		addcontactpage = new AddContactPage(driver);
+		addcontactpage.addcontactaddressbook("Sudheer4", "Neelam", "9876543210", "sudheerkumarn@virtusa.com", "abcdefghi"); 
+		System.out.println("In the test1....!!");
+		
+}
+	
+	@Test
+	public void Addcontacttestemailformat( ) throws Exception {
+		//driver.navigate().refresh();
+		System.out.println("In test 111111");
+		System.out.println("Driver#########"+driver);
+		addcontactpage = new AddContactPage(driver);
+		addcontactpage.addcontactaddressbook("Sudheer5", "Neelam", "9876543210", "sudheerkumarn", "12/4/95"); 
+		System.out.println("In the test1....!!");
+		
+		
+}
+	
 	
 	
 	@Test

@@ -16,7 +16,6 @@ public class AddContactPage {
     //private final String pageUrl = "/";
     
 	private By newcontactBtn = By.xpath("//div[@class='v-button v-widget']");
-	//private By newcontactBtn = By.xpath("//*[@id=\"ROOT-2521314\"]/div/div[2]/div/div/div/div/div[1]/div/div/div[2]/div");
 	private By savecontacttBtn = By.xpath("//div[@class='v-button v-widget primary v-button-primary']");
 	public By cancelcontactBtn = By.xpath("//div[3]/div[@class='v-button v-widget' and 1]");
 	private By firstnameTextbox = By.xpath("//input[@id='gwt-uid-5']");
@@ -40,11 +39,11 @@ public class AddContactPage {
 		WebElement newcontactbtn1= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='v-button v-widget']")));
 		System.out.println("Click on addcontact button.........");
 		newcontactbtn1.click();
-		/* if(newcontactbtn1.isDisplayed())
+		 if(newcontactbtn1.isDisplayed())
 			 System.out.println("btndisplayed0000000000000000000000");
 		 newcontactbtn1.click();
 		 Thread.sleep(5000);
-		 */
+		 
 		WebElement firstname1 = driver.findElement(firstnameTextbox);
 		if(firstname1.isDisplayed())
 			System.out.println("Found field....");
@@ -70,15 +69,14 @@ public class AddContactPage {
 	public  void canceladdcontactaddressbook() throws InterruptedException {
 		WebDriverWait wait=new WebDriverWait(driver, 40);
 		System.out.println("I am in Cancel Addressbook Page############");
-		//WebElement firtstnameget1 = driver.findElement(firtstnameget);
 		WebElement newcontactbtn1= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='v-button v-widget']")));
 		System.out.println("Click on addcontact button.........");
 		newcontactbtn1.click();
-		/* if(newcontactbtn1.isDisplayed())
+		 if(newcontactbtn1.isDisplayed())
 			 System.out.println("btndisplayed0000000000000000000000");
 		 newcontactbtn1.click();
 		 Thread.sleep(5000);
-		 */
+		 
 		
 		 WebElement cancelbtn1 = driver.findElement(cancelcontactBtn);
 		 
