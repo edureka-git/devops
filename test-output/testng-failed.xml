@@ -6,39 +6,10 @@
       <class name="com.POF_AddressBook_Scripts.SortContactTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="sortcontactbyfname"/>
           <include name="initialization"/>
-          <include name="sortcontactbylastname"/>
           <include name="sortcontactbyemail"/>
         </methods>
       </class> <!-- com.POF_AddressBook_Scripts.SortContactTest -->
-      <class name="com.POF_AddressBook_Scripts.SearchContactTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="searchcontact"/>
-          <include name="initialization"/>
-        </methods>
-      </class> <!-- com.POF_AddressBook_Scripts.SearchContactTest -->
-      <class name="com.POF_AddressBook_Scripts.EditConactTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="editcontact"/>
-          <include name="initialization"/>
-        </methods>
-      </class> <!-- com.POF_AddressBook_Scripts.EditConactTest -->
-      <class name="com.POF_AddressBook_Scripts.AddContactTest">
-        <methods>
-          <include name="Addcontactdobformat"/>
-          <include name="Addcontacttest1"/>
-          <include name="Addcontacttest3"/>
-          <include name="closeBrowser"/>
-          <include name="CancelAddcontact"/>
-          <include name="initialization"/>
-          <include name="Addcontacttestempty"/>
-          <include name="Addcontacttestemailformat"/>
-          <include name="Addcontacttest2"/>
-        </methods>
-      </class> <!-- com.POF_AddressBook_Scripts.AddContactTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

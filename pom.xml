@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com</groupId>
-  <artifactId>POF_AddressBook</artifactId>
+  <artifactId>IAT-KYC</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>POF_AddressBook</name>
+  <name>IAT-KYC</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -32,6 +32,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
+        <dependency>
+         <groupId>org.apache.commons</groupId>
+        <artifactId>commons-io</artifactId>
+       <version>1.3.2</version>
+      </dependency>
     
      <dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -61,6 +67,16 @@
   <groupId>com.epam.reportportal</groupId>
   <artifactId>logger-java-log4j</artifactId>
   <version>3.0.0</version>
+</dependency>
+    <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-jdk14</artifactId>
+    <version>1.7.25</version>
+</dependency>
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
 </dependency>
 				
   </dependencies>

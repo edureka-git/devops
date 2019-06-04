@@ -1,6 +1,10 @@
 package com.POF_AddressBook_Scripts;
 
+import javax.validation.constraints.AssertFalse;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -10,62 +14,60 @@ import com.epam.reportportal.testng.ReportPortalTestNGListener;
 
 @Listeners({ReportPortalTestNGListener.class})
 public class SortContactTest extends Driver{
+	private static Logger Log = Logger.getLogger(Logger.class.getName());
 	SortContactPage sortcontactpage;
+	
 	
 	@Test
 	public void sortcontactbyfname() throws Exception{
-		System.out.println("TestPage sortcontact Driver#########"+driver);
+		Log.info("## Sortng contact by Fname");
+		
 		sortcontactpage = new SortContactPage(driver);
 		sortcontactpage.sortcontactbyfname(); 
-		
-		
 		String firtstnameget1 = driver.findElement(By.xpath("//div[@class='v-grid-tablewrapper']/table/tbody/tr[@class='v-grid-row v-grid-row-stripe v-grid-row-has-data'][1]/td[@class='v-grid-cell'][1]")).getText(); 
-		System.out.println("This is firstname#$#$#$#$"+firtstnameget1);
-		
 		if (firtstnameget1.equals("Alex")) {
-			System.out.println("sort contact by firstname Successful");
+			Log.info("## sort contact by firstname Successful");
 		}
 		else {
-			System.out.println("Failed sorting contact by firstname");
+			Log.error("## sort contact by firstname Failed");
+			throw new Exception();
 		}
 		
 	}
 
 	@Test
 	public void sortcontactbylastname() throws Exception{
-		System.out.println("TestPage sortcontact Driver#########"+driver);
+		Log.info("## Sortng contact by Lname");
+		
 		sortcontactpage = new SortContactPage(driver);
 		sortcontactpage.sortcontactbylastname(); 
-		
-		
 		String lastnameget1 = driver.findElement(By.xpath("//div[@class='v-grid-tablewrapper']/table/tbody/tr[@class='v-grid-row v-grid-row-stripe v-grid-row-has-data'][1]/td[@class='v-grid-cell'][2]")).getText(); 
-		System.out.println("This is firstname#$#$#$#$"+lastnameget1);
-		
 		if (lastnameget1.equals("Anderson")) {
-			System.out.println("sort contact by lastname Successful");
+			Log.info("## sort contact by lastname Successful");
 		}
 		else {
-			System.out.println("Failed sorting contact by lastname");
+			Log.error("## sort contact by lastname Failed");
+			throw new Exception();
 		}
 		
 	}
 	
 	@Test
-	public void sortcontactbyemail() throws Exception{
-		System.out.println("TestPage sortcontact Driver#########"+driver);
+	public void sortcontactbyemail1() throws Exception{
+		Log.info("## Sortng contact by Email");
+		
 		sortcontactpage = new SortContactPage(driver);
 		sortcontactpage.sortcontactbyemail(); 
-		
-		
-		String emailget1 = driver.findElement(By.xpath("//div[@class='v-grid-tablewrapper']/table/tbody/tr[@class='v-grid-row v-grid-row-stripe v-grid-row-has-data'][1]/td[@class='v-grid-cell'][3]")).getText(); 
-		System.out.println("This is firstname#$#$#$#$"+emailget1);
-		
+		//String emailget1 = driver.findElement(By.xpath("//div[@class='v-grid-tablewrapper']/table/tbody/tr[@class='v-grid-row v-grid-row-stripe v-grid-row-has-data'][1]/td[@class='v-grid-cell'][3]")).getText(); 
+		String emailget1 = driver.findElement(By.xpath("//samplexpath123456")).getText(); 
 		if (emailget1.equals("alex@king.com")) {
-			System.out.println("sort contact by email Successful");
+			Log.info("## sort contact by email Successful");
+			Assert.assertTrue(true);
 		}
 		else {
-			System.out.println("Failed sorting contact by email");
+			Log.info("## sort contact by email Failed");
+			throw new Exception();
+		}
 		}
 		
-	}
 }

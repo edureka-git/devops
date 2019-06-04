@@ -1,0 +1,248 @@
+2019-04-29 11:37:36 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 11:37:36 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 11:39:32 INFO  Logger:64 - ## Closing Browser
+2019-04-29 11:39:33 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 11:39:33 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 11:40:38 INFO  Logger:64 - ## Closing Browser
+2019-04-29 11:40:38 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 11:40:38 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 11:40:54 INFO  Logger:64 - ## Closing Browser
+2019-04-29 11:40:54 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 11:40:54 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 11:41:06 INFO  Logger:64 - ## Closing Browser
+2019-04-29 12:22:49 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 12:22:49 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 12:29:56 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 12:29:56 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 12:42:13 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 12:42:13 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 12:44:54 INFO  Logger:64 - ## Closing Browser
+2019-04-29 12:44:54 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 12:44:54 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 12:45:59 INFO  Logger:64 - ## Closing Browser
+2019-04-29 12:45:59 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 12:45:59 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 12:46:14 INFO  Logger:64 - ## Closing Browser
+2019-04-29 12:46:14 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 12:46:14 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 12:46:24 INFO  Logger:64 - ## Closing Browser
+2019-04-29 12:47:22 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 12:47:22 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 12:48:27 INFO  Logger:64 - ## Closing Browser
+2019-04-29 12:48:27 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 12:48:27 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 12:49:16 INFO  Logger:64 - ## Closing Browser
+2019-04-29 12:49:16 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 12:49:16 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 12:49:29 INFO  Logger:64 - ## Closing Browser
+2019-04-29 12:49:29 INFO  Logger:23 - ## Initialzing Driver
+2019-04-29 12:49:29 INFO  Logger:30 - ## Initialzing Chrome Driver
+2019-04-29 12:49:46 INFO  Logger:64 - ## Closing Browser
+2019-04-29 13:18:53 INFO  Logger:32 - ## Initialzing Driver
+2019-04-29 13:18:53 INFO  Logger:39 - ## Initialzing Chrome Driver
+2019-04-29 13:21:00 INFO  Logger:73 - ## Closing Browser
+2019-04-29 13:21:00 INFO  Logger:32 - ## Initialzing Driver
+2019-04-29 13:21:00 INFO  Logger:39 - ## Initialzing Chrome Driver
+2019-04-29 13:22:00 INFO  Logger:73 - ## Closing Browser
+2019-04-29 13:22:00 INFO  Logger:32 - ## Initialzing Driver
+2019-04-29 13:22:00 INFO  Logger:39 - ## Initialzing Chrome Driver
+2019-04-29 13:22:22 INFO  Logger:73 - ## Closing Browser
+2019-04-29 13:22:22 INFO  Logger:32 - ## Initialzing Driver
+2019-04-29 13:22:22 INFO  Logger:39 - ## Initialzing Chrome Driver
+2019-04-29 13:22:31 INFO  Logger:73 - ## Closing Browser
+2019-04-29 13:43:23 INFO  Logger:45 - ## Initialzing Driver
+2019-04-29 13:43:23 INFO  Logger:52 - ## Initialzing Chrome Driver
+2019-04-29 13:43:56 INFO  Logger:106 - ## Adding a contact with an wrong date format
+2019-04-29 13:44:08 INFO  Logger:32 - ## Adding the contact with all the details
+2019-04-29 13:44:14 INFO  Logger:49 - ## Adding the contact with wrong email
+2019-04-29 13:44:28 INFO  Logger:122 - ## Adding a contact with wrong email format
+2019-04-29 13:44:34 INFO  Logger:88 - ## Adding an empty contact
+2019-04-29 13:44:39 INFO  Logger:144 - ## Clicking on cancel btn
+2019-04-29 13:44:47 INFO  Logger:86 - ## Closing Browser
+2019-04-29 13:44:47 INFO  Logger:45 - ## Initialzing Driver
+2019-04-29 13:44:47 INFO  Logger:52 - ## Initialzing Chrome Driver
+2019-04-29 13:44:55 INFO  Logger:18 - ## Edit contact
+2019-04-29 13:45:37 INFO  Logger:86 - ## Closing Browser
+2019-04-29 13:45:37 INFO  Logger:45 - ## Initialzing Driver
+2019-04-29 13:45:37 INFO  Logger:52 - ## Initialzing Chrome Driver
+2019-04-29 13:45:43 INFO  Logger:21 - ## Search contact
+2019-04-29 13:45:47 INFO  Logger:86 - ## Closing Browser
+2019-04-29 13:45:47 INFO  Logger:45 - ## Initialzing Driver
+2019-04-29 13:45:47 INFO  Logger:52 - ## Initialzing Chrome Driver
+2019-04-29 13:45:54 INFO  Logger:64 - ## Sortng contact by Email
+2019-04-29 13:45:55 INFO  Logger:20 - ## Sortng contact by Fname
+2019-04-29 13:45:56 INFO  Logger:42 - ## Sortng contact by Lname
+2019-04-29 13:45:58 INFO  Logger:86 - ## Closing Browser
+2019-04-29 13:50:20 INFO  Logger:45 - ## Initialzing Driver
+2019-04-29 13:50:20 INFO  Logger:52 - ## Initialzing Chrome Driver
+2019-04-29 13:50:29 INFO  Logger:109 - ## Adding a contact with an wrong date format
+2019-04-29 13:50:37 INFO  Logger:32 - ## Adding the contact with all the details
+2019-04-29 13:50:43 INFO  Logger:50 - ## Adding the contact with wrong email
+2019-04-29 13:50:58 INFO  Logger:126 - ## Adding a contact with wrong email format
+2019-04-29 13:51:03 INFO  Logger:90 - ## Adding an empty contact
+2019-04-29 13:51:09 INFO  Logger:149 - ## Clicking on cancel btn
+2019-04-29 13:51:16 INFO  Logger:86 - ## Closing Browser
+2019-04-29 13:51:16 INFO  Logger:45 - ## Initialzing Driver
+2019-04-29 13:51:16 INFO  Logger:52 - ## Initialzing Chrome Driver
+2019-04-29 13:51:23 INFO  Logger:19 - ## Edit contact
+2019-04-29 13:52:04 INFO  Logger:86 - ## Closing Browser
+2019-04-29 13:52:04 INFO  Logger:45 - ## Initialzing Driver
+2019-04-29 13:52:04 INFO  Logger:52 - ## Initialzing Chrome Driver
+2019-04-29 13:52:11 INFO  Logger:22 - ## Search contact
+2019-04-29 13:52:16 INFO  Logger:86 - ## Closing Browser
+2019-04-29 13:52:16 INFO  Logger:45 - ## Initialzing Driver
+2019-04-29 13:52:16 INFO  Logger:52 - ## Initialzing Chrome Driver
+2019-04-29 13:52:28 INFO  Logger:67 - ## Sortng contact by Email
+2019-04-29 13:52:29 INFO  Logger:21 - ## Sortng contact by Fname
+2019-04-29 13:52:32 INFO  Logger:44 - ## Sortng contact by Lname
+2019-04-29 13:52:34 INFO  Logger:86 - ## Closing Browser
+2019-04-29 14:26:41 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 14:26:41 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 14:27:13 INFO  Logger:109 - ## Adding a contact with an wrong date format
+2019-04-29 14:27:21 INFO  Logger:32 - ## Adding the contact with all the details
+2019-04-29 14:27:27 INFO  Logger:50 - ## Adding the contact with wrong email
+2019-04-29 14:27:48 INFO  Logger:126 - ## Adding a contact with wrong email format
+2019-04-29 14:27:53 INFO  Logger:90 - ## Adding an empty contact
+2019-04-29 14:27:59 INFO  Logger:149 - ## Clicking on cancel btn
+2019-04-29 14:28:09 INFO  Logger:94 - ## Closing Browser
+2019-04-29 14:28:09 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 14:28:09 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 14:28:20 INFO  Logger:19 - ## Edit contact
+2019-04-29 14:29:02 INFO  Logger:94 - ## Closing Browser
+2019-04-29 14:29:02 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 14:29:02 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 14:29:13 INFO  Logger:22 - ## Search contact
+2019-04-29 14:29:18 INFO  Logger:94 - ## Closing Browser
+2019-04-29 14:29:18 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 14:29:18 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 14:29:30 INFO  Logger:67 - ## Sortng contact by Email
+2019-04-29 14:29:32 INFO  Logger:21 - ## Sortng contact by Fname
+2019-04-29 14:29:34 INFO  Logger:44 - ## Sortng contact by Lname
+2019-04-29 14:29:38 INFO  Logger:94 - ## Closing Browser
+2019-04-29 14:36:25 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 14:36:25 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 14:36:36 INFO  Logger:109 - ## Adding a contact with an wrong date format
+2019-04-29 14:36:48 INFO  Logger:32 - ## Adding the contact with all the details
+2019-04-29 14:36:54 INFO  Logger:50 - ## Adding the contact with wrong email
+2019-04-29 14:37:19 INFO  Logger:126 - ## Adding a contact with wrong email format
+2019-04-29 14:37:25 INFO  Logger:90 - ## Adding an empty contact
+2019-04-29 14:37:30 INFO  Logger:149 - ## Clicking on cancel btn
+2019-04-29 14:37:37 INFO  Logger:94 - ## Closing Browser
+2019-04-29 14:37:37 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 14:37:37 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 14:37:43 INFO  Logger:19 - ## Edit contact
+2019-04-29 14:38:25 INFO  Logger:94 - ## Closing Browser
+2019-04-29 14:38:25 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 14:38:25 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 14:38:29 INFO  Logger:22 - ## Search contact
+2019-04-29 14:38:31 INFO  Logger:94 - ## Closing Browser
+2019-04-29 14:38:31 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 14:38:31 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 14:38:36 INFO  Logger:67 - ## Sortng contact by Email
+2019-04-29 14:38:37 INFO  Logger:21 - ## Sortng contact by Fname
+2019-04-29 14:38:37 INFO  Logger:44 - ## Sortng contact by Lname
+2019-04-29 14:38:39 INFO  Logger:94 - ## Closing Browser
+2019-04-29 14:44:56 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 14:44:56 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 14:45:40 INFO  Logger:109 - ## Adding a contact with an wrong date format
+2019-04-29 14:45:54 INFO  Logger:32 - ## Adding the contact with all the details
+2019-04-29 14:46:00 INFO  Logger:50 - ## Adding the contact with wrong email
+2019-04-29 14:46:18 INFO  Logger:126 - ## Adding a contact with wrong email format
+2019-04-29 14:46:24 INFO  Logger:90 - ## Adding an empty contact
+2019-04-29 14:46:29 INFO  Logger:149 - ## Clicking on cancel btn
+2019-04-29 14:46:36 INFO  Logger:94 - ## Closing Browser
+2019-04-29 14:46:36 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 14:46:36 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 14:46:44 INFO  Logger:19 - ## Edit contact
+2019-04-29 14:47:25 INFO  Logger:94 - ## Closing Browser
+2019-04-29 14:47:25 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 14:47:25 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 14:47:30 INFO  Logger:22 - ## Search contact
+2019-04-29 14:47:34 INFO  Logger:94 - ## Closing Browser
+2019-04-29 14:47:34 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 14:47:34 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 14:47:39 INFO  Logger:67 - ## Sortng contact by Email
+2019-04-29 14:47:39 INFO  Logger:21 - ## Sortng contact by Fname
+2019-04-29 14:47:40 INFO  Logger:44 - ## Sortng contact by Lname
+2019-04-29 14:47:41 INFO  Logger:94 - ## Closing Browser
+2019-04-29 15:50:08 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 15:50:08 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 15:50:34 INFO  Logger:109 - ## Adding a contact with an wrong date format
+2019-04-29 15:50:42 INFO  Logger:32 - ## Adding the contact with all the details
+2019-04-29 15:50:48 INFO  Logger:50 - ## Adding the contact with wrong email
+2019-04-29 15:51:02 INFO  Logger:126 - ## Adding a contact with wrong email format
+2019-04-29 15:51:08 INFO  Logger:90 - ## Adding an empty contact
+2019-04-29 15:51:13 INFO  Logger:149 - ## Clicking on cancel btn
+2019-04-29 15:51:19 INFO  Logger:94 - ## Closing Browser
+2019-04-29 15:51:19 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 15:51:19 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 15:51:25 INFO  Logger:19 - ## Edit contact
+2019-04-29 15:52:07 INFO  Logger:94 - ## Closing Browser
+2019-04-29 15:52:07 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 15:52:07 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 15:52:12 INFO  Logger:22 - ## Search contact
+2019-04-29 15:52:14 INFO  Logger:94 - ## Closing Browser
+2019-04-29 15:52:14 INFO  Logger:53 - ## Initialzing Driver
+2019-04-29 15:52:14 INFO  Logger:60 - ## Initialzing Chrome Driver
+2019-04-29 15:52:20 INFO  Logger:67 - ## Sortng contact by Email
+2019-04-29 15:52:21 INFO  Logger:21 - ## Sortng contact by Fname
+2019-04-29 15:52:21 INFO  Logger:44 - ## Sortng contact by Lname
+2019-04-29 15:52:23 INFO  Logger:94 - ## Closing Browser
+2019-05-02 12:00:10 INFO  Driver:56 - ## Initialzing Driver *********
+2019-05-02 12:00:10 INFO  Driver:63 - ## Initialzing Chrome Driver
+2019-05-02 12:00:28 INFO  AddContactTest:34 - ## Adding the contact with all the details **********
+2019-05-02 12:00:38 INFO  AddContactTest:115 - ## Adding a contact with an wrong date format ***********
+2019-05-02 12:00:45 INFO  AddContactTest:94 - ## Adding an empty contact
+2019-05-02 12:00:51 INFO  AddContactTest:53 - ## Adding the contact with wrong email
+2019-05-02 12:01:04 INFO  AddContactTest:137 - ## Adding a contact with wrong email format
+2019-05-02 12:01:10 INFO  AddContactTest:158 - ## Clicking on cancel btn
+2019-05-02 12:01:15 INFO  AddContactTest:169 - ## Failed Cancel btn not working
+2019-05-02 12:01:16 INFO  Driver:97 - ## Closing Browser
+2019-05-02 12:01:16 INFO  Driver:56 - ## Initialzing Driver *********
+2019-05-02 12:01:16 INFO  Driver:63 - ## Initialzing Chrome Driver
+2019-05-02 12:01:20 INFO  EditConactTest:25 - ## Edit contact
+2019-05-02 12:02:00 ERROR EditConactTest:45 - ## Failed during edit contact
+2019-05-02 12:02:02 INFO  Driver:97 - ## Closing Browser
+2019-05-02 12:02:02 INFO  Driver:56 - ## Initialzing Driver *********
+2019-05-02 12:02:02 INFO  Driver:63 - ## Initialzing Chrome Driver
+2019-05-02 12:02:07 INFO  Logger:22 - ## Search contact
+2019-05-02 12:02:07 ERROR Logger:41 - ## search contact Failed
+2019-05-02 12:02:08 INFO  Driver:97 - ## Closing Browser
+2019-05-02 12:02:08 INFO  Driver:56 - ## Initialzing Driver *********
+2019-05-02 12:02:08 INFO  Driver:63 - ## Initialzing Chrome Driver
+2019-05-02 12:02:14 INFO  Logger:71 - ## Sortng contact by Email
+2019-05-02 12:02:14 INFO  Logger:88 - ## sort contact by email Failed
+2019-05-02 12:02:15 INFO  Logger:21 - ## Sortng contact by Fname
+2019-05-02 12:02:15 INFO  Logger:28 - ## sort contact by firstname Successful
+2019-05-02 12:02:15 INFO  Logger:46 - ## Sortng contact by Lname
+2019-05-02 12:02:15 ERROR Logger:62 - ## sort contact by lastname Failed
+2019-05-02 12:02:16 INFO  Driver:97 - ## Closing Browser
+2019-05-02 12:12:00 INFO  Driver:56 - ## Initialzing Driver *********
+2019-05-02 12:12:00 INFO  Driver:63 - ## Initialzing Chrome Driver
+2019-05-02 12:12:06 INFO  AddContactTest:34 - ## Adding the contact with all the details **********
+2019-05-02 12:12:14 INFO  AddContactTest:115 - ## Adding a contact with an wrong date format ***********
+2019-05-02 12:12:20 INFO  AddContactTest:94 - ## Adding an empty contact
+2019-05-02 12:12:26 INFO  AddContactTest:53 - ## Adding the contact with wrong email
+2019-05-02 12:12:38 INFO  AddContactTest:137 - ## Adding a contact with wrong email format
+2019-05-02 12:12:44 INFO  AddContactTest:158 - ## Clicking on cancel btn
+2019-05-02 12:12:49 INFO  AddContactTest:169 - ## Failed Cancel btn not working
+2019-05-02 12:12:50 INFO  Driver:97 - ## Closing Browser
+2019-05-02 12:12:50 INFO  Driver:56 - ## Initialzing Driver *********
+2019-05-02 12:12:50 INFO  Driver:63 - ## Initialzing Chrome Driver
+2019-05-02 12:12:57 INFO  EditConactTest:25 - ## Edit contact
+2019-05-02 12:13:37 ERROR EditConactTest:45 - ## Failed during edit contact
+2019-05-02 12:13:38 INFO  Driver:97 - ## Closing Browser
+2019-05-02 12:13:38 INFO  Driver:56 - ## Initialzing Driver *********
+2019-05-02 12:13:38 INFO  Driver:63 - ## Initialzing Chrome Driver
+2019-05-02 12:13:42 INFO  Logger:22 - ## Search contact
+2019-05-02 12:13:42 ERROR Logger:41 - ## search contact Failed
+2019-05-02 12:13:44 INFO  Driver:97 - ## Closing Browser
+2019-05-02 12:13:44 INFO  Driver:56 - ## Initialzing Driver *********
+2019-05-02 12:13:44 INFO  Driver:63 - ## Initialzing Chrome Driver
+2019-05-02 12:13:48 INFO  Logger:71 - ## Sortng contact by Email
+2019-05-02 12:13:48 INFO  Logger:88 - ## sort contact by email Failed
+2019-05-02 12:13:49 INFO  Logger:21 - ## Sortng contact by Fname
+2019-05-02 12:13:49 INFO  Logger:28 - ## sort contact by firstname Successful
+2019-05-02 12:13:49 INFO  Logger:46 - ## Sortng contact by Lname
+2019-05-02 12:13:49 ERROR Logger:62 - ## sort contact by lastname Failed
+2019-05-02 12:13:50 INFO  Driver:97 - ## Closing Browser
