@@ -62,7 +62,7 @@ public class Driver {
 				browserType.equals("chrome");
 				//BasicConfigurator.configure();
 				Log.info("## Initialzing Chrome Driver");
-				/*String chromePath = null;
+				String chromePath = null;
 				String osName=System.getProperty("os.name");
 				ChromeOptions options = new ChromeOptions();
 				if(osName.indexOf("Windows")!=-1)
@@ -71,16 +71,16 @@ public class Driver {
 					options.setBinary("/opt/google/chrome/google-chrome");
 					chromePath=System.getProperty("user.dir")+"/drivers/linux/chromedriver";
 				}
-				System.setProperty("webdriver.chrome.driver", chromePath);*/
+				System.setProperty("webdriver.chrome.driver", chromePath);
 
 				// uncomment this to run in ubuntu
 				//String chromePath = "/home/sudheer/Documents/Reportportal/drivers/chromedriver";
 				//String chromePath = "C:\\Users\\sudheerkumarn\\Documents\\Eclipse\\BDD\\POF_AddressBook\\drivers\\windows\\chromedriver.exe";
-				String chromePath = System.getProperty("user.dir")+"/drivers/windows/chromedriver.exe";
+				//String chromePath = System.getProperty("user.dir")+"/drivers/windows/chromedriver.exe";
 				
 				// Setting the webdriver.chrome.driver property to set executable's
-				System.setProperty("webdriver.chrome.driver", chromePath);
-				ChromeOptions options = new ChromeOptions();
+				//System.setProperty("webdriver.chrome.driver", chromePath);
+				//ChromeOptions options = new ChromeOptions();
 				// uncomment this to run in ubuntu
 				
 				options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
