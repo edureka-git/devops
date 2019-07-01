@@ -90,7 +90,7 @@ public class Driver {
 
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.get("http://localhost:8083/addressbook");
+			driver.get("http://localhost:9090/addressbook");
 	}
 	
 	@AfterClass
