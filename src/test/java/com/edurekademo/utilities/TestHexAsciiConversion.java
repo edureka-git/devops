@@ -27,32 +27,32 @@ public class TestHexAsciiConversion {
 		assertEquals(" ",hexadecimalValue, "74657374696e6720617363696920636f6e76657274696f6e20696e746f2068657861646563696d616c");
 		System.out.println(hexadecimalValue);
 	}
-	
+
 	@Test
 	public void testAsciiToHexNull()
 	{
 		String hexvalueNull=conversion.convertHexToASCII(null);
 		assertNull("Result should be null", hexvalueNull);
-		
+
 	}
-	
+
 	@Test
-	
+
 	public void testHexToAsciiValid()
 	{
 		String asciiValue=conversion.convertHexToASCII(hexvalue);
-		
+
 		assertEquals(" ",asciiValue,"testing ascii convertion into hexadecimal");
 		System.out.println(asciiValue);
 	}
-	
+
 	@Test
 
 	public void testHextoAsciiNull()
 	{
 		String asciiValueNull=conversion.convertAsciiToHex(null);
 		assertNull("Result should be null", asciiValueNull);
-		
+
 	}
-	
+
 }

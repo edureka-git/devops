@@ -9,11 +9,11 @@
 	 <!-- ====================================================================== -->
 	 <!-- Defining classpaths & Task Defs                                        -->
 	 <!-- ====================================================================== -->
-	<property environment="env"/> 
-	<property name="installpath.pmd" value="${env.PMD_HOME}/lib"/> 
+	<property environment="env"/>
+	<property name="installpath.pmd" value="${env.PMD_HOME}/lib"/>
 	<property name="pmd.installpath" value="${env.PMD_HOME}/lib"/>
 	<property name="pmd.classpath" value="${env.PMD_HOME}/lib"/>
-	  <!-- For Cobertura --> 
+	  <!-- For Cobertura -->
 	  <property name="lib.cobertura.dir" value="c:/apps/cobertura-1.9.4.1" />
 	  <property name="cobertura.jar.file" value="${lib.cobertura.dir}/cobertura.jar" />
 		<path id="pmd.classpath">
@@ -36,7 +36,7 @@
   					 <equals arg1="${basesrcdir}" arg2="$${basesrcdir}"/>
   					 <then>
   					 	<property name="build.basesrcdir" value="."/>
-  					</then> 
+  					</then>
   					 	<else>
   					 		<property name="build.basesrcdir" value="${basesrcdir}"/>
   					    </else>
@@ -46,7 +46,7 @@
   					 <then>
 					 		<property name="maven.build.resourceDir" value="${build.basesrcdir}/src/main/resources/${environment.type.default}"/>
   					 	<property name="actualbuildtype" value="${environment.type.default}"/>
-  					</then> 
+  					</then>
   					 	<else>
   					 		<property name="maven.build.resourceDir" value="${build.basesrcdir}/src/main/resources/${buildtype}"/>
   	  					 	<property name="actualbuildtype" value="${buildtype}"/>
@@ -56,7 +56,7 @@
    <property file="${build.basesrcdir}/build.properties"/>
    <artifact:pom id="pom" file="pom.xml" />
    <property name="actualbuildname" value="${pom.artifactId}"/>
-   <property name="actualversion" value="${pom.version}"/>	
+   <property name="actualversion" value="${pom.version}"/>
    <echo message="Artifact ID/Version: ${actualbuildname}/${actualversion}"/>
    <property name="build.version" value="${version}"/>
    <property name="maven.build.finalName" value="${actualbuildname}-${actualversion}"/>
@@ -69,16 +69,16 @@
    <property name="maven.test.reports" value="${maven.build.dir}/test-reports"/>
    <property name="maven.reporting.outputDirectory" value="reports"/>
    <property name="project.3rdpartylibdir" value="${build.basesrcdir}/lib"/>
-   <property name="maven.build.pmddir" value="${build.basesrcdir}/src/main/pmd"/> 
-   <property name="sonar.host.url" value="${env.SONAR_URL}" /> 
+   <property name="maven.build.pmddir" value="${build.basesrcdir}/src/main/pmd"/>
+   <property name="sonar.host.url" value="${env.SONAR_URL}" />
    <property name="sonar.jdbc.url"  value="jdbc:mysql://${env.SONAR_DBSERVER}:${env.SONAR_DBPORT}/${env.SONAR_DBNAME}?useUnicode=true&amp;characterEncoding=utf8&amp;rewriteBatchedStatements=true&amp;useConfigs=maxPerformance" />
-   <property name="sonar.jdbc.username"  value="${env.SONAR_DBUSER}"/> 
-   <property name="sonar.jdbc.password"  value="${env.SONAR_DBPASSWORD}"/> 
+   <property name="sonar.jdbc.username"  value="${env.SONAR_DBUSER}"/>
+   <property name="sonar.jdbc.password"  value="${env.SONAR_DBPASSWORD}"/>
    <property name="sonar.projectKey" value="${ant.project.name}"/>
    <property name="sonar.projectName" value="${ant.project.name}"/>
    <property name="sonar.projectVersion" value="${actualversion}"/>
    <property name="sonar.sources" value="${build.basesrcdir}/src/main/java"/>
-   <!-- For Cobertura --> 
+   <!-- For Cobertura -->
    <property name="cob.ser.file" value="cobertura.ser" />
    <property name="cobertura.dir" value="./cobertura" />
    <property name="cob.instrumented.dir" value="${cobertura.dir}/instrumented" />
@@ -88,7 +88,7 @@
    <property name="cob.coverage.xml.dir" value="${cob.reports.dir}/cobertura-xml" />
    <property name="cob.coverage.html.dir" value="${cob.reports.dir}/cobertura-html" />
 
-	
+
 	<path id="libpath">
 		<fileset dir="${project.3rdpartylibdir}"/>
 	</path>
@@ -98,13 +98,13 @@
 
    <echo message="***************************************************************************"/>
    <echo message="Start the build for: ${ant.project.name} "/>
-   <echo message="Base Dir: ${build.basesrcdir} ${actualbuildtype}"/> 
+   <echo message="Base Dir: ${build.basesrcdir} ${actualbuildtype}"/>
    <mkdir dir="${project.3rdpartylibdir}"/>
    <echo message="PMD Libraries installed in: ${pmd.installpath}"/>
    <echo message="***************************************************************************"/>
    <echo message="Skip Test? ${maven.test.skip}"/>
 
-		
+
   <!-- ====================================================================== -->
   <!-- Cleaning up target                                                     -->
   <!-- ====================================================================== -->
@@ -112,7 +112,7 @@
 		<delete dir="${maven.build.dir}"/>
 		<delete dir="${project.3rdpartylibdir}"/>
 		<delete dir="${maven.reporting.outputDirectory}"/>
-  	    <delete dir="./.sonar"/> 
+  	    <delete dir="./.sonar"/>
   	    <delete dir="reports"/>
   	    <delete file="${cob.ser.file}"/>
   	    <delete dir="${cobertura.dir}"/>
@@ -130,17 +130,17 @@
 	  <fileset refid="deps.fileset" />
 		<mapper type="flatten" />
 	</copy>
-</target> 
-	
+</target>
+
   <!-- ====================================================================== -->
   <!-- Compilation target                                                     -->
   <!-- ====================================================================== -->
   <target name="compile" depends="maven_dep_copy" description="Compiles the code. Does a validation on PMD Rules">
     <mkdir dir="${maven.build.outputDir}"/>
-    <javac includeantruntime="false" destdir="${maven.build.outputDir}" 
-           nowarn="false"            debug="true" 
-           optimize="false"         deprecation="true" 
-           target="1.6"                   verbose="false" 
+    <javac includeantruntime="false" destdir="${maven.build.outputDir}"
+           nowarn="false"            debug="true"
+           optimize="false"         deprecation="true"
+           target="1.6"                   verbose="false"
            fork="false"                  source="1.6">
       <src>
         <pathelement location="${maven.build.srcDir}"/>
@@ -157,14 +157,14 @@
   <!-- ====================================================================== -->
   <!-- Test-compilation target                                                -->
   <!-- ====================================================================== -->
-  <target name="compile-tests" 
-          depends="compile" 
+  <target name="compile-tests"
+          depends="compile"
           description="Compiles the test code, unless maven's skip test property is unset">
     <mkdir dir="${maven.build.testOutputDir}"/>
-    <javac includeantruntime="false" destdir="${maven.build.testOutputDir}" 
-           nowarn="false"           debug="true" 
-           optimize="false"        deprecation="true" 
-           target="1.8"                  verbose="false" 
+    <javac includeantruntime="false" destdir="${maven.build.testOutputDir}"
+           nowarn="false"           debug="true"
+           optimize="false"        deprecation="true"
+           target="1.8"                  verbose="false"
            fork="false"                 source="1.7">
       <src>
         <pathelement location="${maven.build.testDir}"/>
@@ -183,8 +183,8 @@
   <!-- ====================================================================== -->
   <!-- Run all tests                                                          -->
   <!-- ====================================================================== -->
-  <target name="test" 
-          depends="compile-tests" 
+  <target name="test"
+          depends="compile-tests"
           description="Runs the test cases">
     <mkdir dir="${maven.test.reports}"/>
     <junit haltonerror="no" failureproperty="test.failed" haltonfailure="no" printSummary="yes"  fork="true" dir=".">
@@ -205,14 +205,14 @@
         </fileset>
       </batchtest>
     </junit>
-  	
+
     <junitreport todir="${maven.test.reports}">
          <fileset dir="${maven.test.reports}">
              <include name="TEST-*.xml" />
          </fileset>
          <report format="noframes" todir="${maven.test.reports}\html\" />
      </junitreport>
-  	
+
     <fail message="Test failure detected, check test results." if="test.failed" />
   </target>
 
@@ -221,7 +221,7 @@
   	<echo message="${junit.present}"/>
   </target>
 
-  <target name="test-junit-status" 
+  <target name="test-junit-status"
           depends="test-junit-present" description="Set condition if JUNIT tests are to be run.">
     <condition property="junit.missing">
       <and>
@@ -237,8 +237,8 @@
     </condition>
   </target>
 
-  <target name="junit-missing" 
-          depends="test-junit-status" 
+  <target name="junit-missing"
+          depends="test-junit-status"
           if="junit.missing" description="Reports if JUNIT library is missing so to avoid running JUNIT Tests">
     <echo>=================================== WARNING ==========================================</echo>
     <echo> JUnit is not present in the test classpath or your $ANT_HOME/lib directory. Tests not executed.  </echo>
@@ -249,25 +249,25 @@
   <!-- Javadoc target                                                         -->
   <!-- ====================================================================== -->
   <target name="javadoc" description="Generates the Javadoc of the application">
-    <javadoc sourcepath="${maven.build.srcDir}" 
-             packagenames="*" 
-             destdir="${maven.reporting.outputDirectory}/apidocs" 
-             access="protected" 
-             old="false" 
-             verbose="false" 
-             version="true" 
-             use="true" 
-             author="true" 
-             splitindex="false" 
-             nodeprecated="false" 
-             nodeprecatedlist="false" 
-             notree="false" 
-             noindex="false" 
-             nohelp="false" 
-             nonavbar="false" 
-             serialwarn="false" 
-             charset="ISO-8859-1" 
-             linksource="false" 
+    <javadoc sourcepath="${maven.build.srcDir}"
+             packagenames="*"
+             destdir="${maven.reporting.outputDirectory}/apidocs"
+             access="protected"
+             old="false"
+             verbose="false"
+             version="true"
+             use="true"
+             author="true"
+             splitindex="false"
+             nodeprecated="false"
+             nodeprecatedlist="false"
+             notree="false"
+             noindex="false"
+             nohelp="false"
+             nonavbar="false"
+             serialwarn="false"
+             charset="ISO-8859-1"
+             linksource="false"
              breakiterator="false"
              additionalparam="-Xdoclint:none" />
   </target>
@@ -289,7 +289,7 @@
 		  					 <equals arg1="${pmderrors}" arg2="$${pmderrors}"/>
 		  					 <then>
 		  					 	<property name="pmdreporterrcnt" value="0"/>
-		  					</then> 
+		  					</then>
 		  					 	<else>
 		  					 		<property name="pmdreporterrcnt" value="${pmderrors}"/>
 		  					    </else>
@@ -311,14 +311,14 @@
 	    </chainedmapper>
 	  </mapper>
 	</pathconvert>
-    <jar jarfile="${maven.build.dir}/${maven.build.finalName}.jar" 
-         compress="true"   index="false" 
+    <jar jarfile="${maven.build.dir}/${maven.build.finalName}.jar"
+         compress="true"   index="false"
          basedir="${maven.build.outputDir}"  excludes="**/package.html">
     	 <manifest>
     	  	<attribute name="Built-By" value="${user.name}"/>
     	 	<attribute name="Created-By" value="Build Tool V1"/>
     	    <attribute name="Implementation-Title" value="${actualbuildname}.jar"/>
-    	    <attribute name="Implementation-Version" value="${maven.build.version}-${MYTIME}"/> 
+    	    <attribute name="Implementation-Version" value="${maven.build.version}-${MYTIME}"/>
     	    <attribute name="Implementation-Vendor" value="SeshagiriSriram"/>
     	 	<attribute name="Class-Path" value="${manifest.classpath}"/>
     	 </manifest>
@@ -338,7 +338,7 @@
 	  					 <equals arg1="${zipoutput}" arg2="$${zipoutput}"/>
 	  					 <then>
 	  					 	<property name="zipoutputdir" value="${maven.build.dir}"/>
-	  					</then> 
+	  					</then>
 	  					 	<else>
 	  					 		<property name="zipoutputdir" value="${zipoutput}"/>
 	  					    </else>
@@ -346,19 +346,19 @@
 	  	<echo message="Copying files from ${maven.build.resourceDir} to ${maven.build.dir}/tmp"/>
 		<mkdir dir="${maven.build.dir}/tmp"/>
 	  	<mkdir dir="${zipoutputdir}"/>
-	  	<echo message="Resource Directory: ${maven.build.resourceDir}" /> 
+	  	<echo message="Resource Directory: ${maven.build.resourceDir}" />
 	  	<copy todir="${maven.build.dir}/tmp" overwrite="true">
 	  		<fileset dir="${maven.build.resourceDir}"/>
 	  		<file name="${maven.build.dir}/${maven.build.finalName}.jar"/>
 	  	</copy>
 	  	<zip destfile="${zipoutputdir}/${maven.build.finalName}.zip">
 	  		<zipfileset dir="${maven.build.dir}/tmp" includes="*.properties,*.xml,*.txt, ${maven.build.finalName}.jar"/>
-	  		<zipfileset dir="./lib" prefix="lib"/> 
+	  		<zipfileset dir="./lib" prefix="lib"/>
 	  	</zip>
 		<delete dir="${maven.build.dir}/tmp"/>
 	  	<delete dir="${project.3rdpartylibdir}"/>
 	  	<mkdir dir="${project.3rdpartylibdir}"/>
-	  	<delete file="${maven.build.dir}/../${maven.build.finalName}.zip"/> 
+	  	<delete file="${maven.build.dir}/../${maven.build.finalName}.zip"/>
 	  </target>
 
   <!-- ====================================================================== -->
@@ -373,7 +373,7 @@
    <!-- ====================================================================== -->
    <!-- Installs components to Artifactory                                     -->
    <!-- ====================================================================== -->
-	<target name="install" depends="zip" description="Installs the JAR to artifactory"> 
+	<target name="install" depends="zip" description="Installs the JAR to artifactory">
 			<echo message="Maven is found in: ${env.MAVEN_HOME}"/>
 			<artifact:deploy file="${maven.build.dir}/${maven.build.finalName}.jar">
 			      <pom file="pom.xml"/>
@@ -388,12 +388,12 @@
 	<taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml"  classpathref="maven-ant-tasks.classpath" />
 	<!-- Execute the SonarQube analysis -->
 	<sonar:sonar />
-	</target> 
+	</target>
 
   <!-- ====================================================================== -->
   <!-- Copy files required for instrumentation                                -->
   <!-- ====================================================================== -->
-	
+
 	<target name="prepare" depends="clean, maven_dep_copy">
 	    <mkdir dir="${maven.reporting.outputDirectory}" />
 	    <!-- cobertura directories -->
@@ -403,7 +403,7 @@
 	    <mkdir dir="${cob.reports.html.dir}" />
 	    <mkdir dir="${cob.coverage.xml.dir}" />
 	    <mkdir dir="${cob.coverage.html.dir}" />
-		<!-- WE DO NOT HAVE LIBS IN OUR APPLICTION - SO WE DEFINE THE TASK AFTER GETTING THE FILE --> 
+		<!-- WE DO NOT HAVE LIBS IN OUR APPLICTION - SO WE DEFINE THE TASK AFTER GETTING THE FILE -->
 		<path id="cobertura.classpath">
 			<fileset dir="${lib.cobertura.dir}">
 			        <include name="cobertura.jar" />
@@ -413,7 +413,7 @@
 		  </path>
 		  <taskdef resource="tasks.properties" classpathref="cobertura.classpath"/>
 	  </target>
-	
+
   <!-- ====================================================================== -->
   <!-- Do Actual Instrumentation                                              -->
   <!-- ====================================================================== -->
@@ -426,7 +426,7 @@
 	      </fileset>
 	    </cobertura-instrument>
 	  </target>
-	
+
   <!-- ====================================================================== -->
   <!-- Call Instrumentation                                                   -->
   <!-- ====================================================================== -->
@@ -448,7 +448,7 @@
 	  	     	<fileset dir="${project.3rdpartylibdir}"/>
 	  	        <pathelement location="${maven.build.testOutputDir}"/>
 	  	      </classpath>
-	  	   
+
 	        <batchtest skipNonTests="false" todir="${maven.test.reports}">
 	          <fileset dir="${maven.build.testDir}">
 	            <include name="**/Test*.java"/>
@@ -460,7 +460,7 @@
 
 		</junit>
 	  </target>
-	
+
   <!-- ====================================================================== -->
   <!-- Report on this....                                                     -->
   <!-- ====================================================================== -->

@@ -7,7 +7,7 @@ public class HexAsciiConvertor {
 	 * @param hexValue
 	 * @return outputAscii
 	 */
-	
+
 	public static String convertHexToASCII(String hexValue)
 	{
 		StringBuilder outputAscii = new StringBuilder();
@@ -27,19 +27,19 @@ public class HexAsciiConvertor {
 		}
 	    return asciiValue;
 	}
-	
+
 	/**
 	 * Method to convert ascii values into hexadecimal
 	 * method is returning the hexadecimal value
 	 * @param asciiValue
 	 * @return hex
 	 */
-	
+
 	public static String convertAsciiToHex(String asciiValue)
 	{
 		String hexvalue = null;
 		try {
-			
+
 			  if(asciiValue!=null)
 			  {
 			      char[] chars = asciiValue.toCharArray();
@@ -49,7 +49,7 @@ public class HexAsciiConvertor {
 			         hex.append(Integer.toHexString((int) chars[i]));
 			      }
 			      hexvalue= hex.toString();
-			  }			  
+			  }
 		}
 		catch (Exception e) {
 			LoggerStackTraceUtil.printErrorMessage(e);

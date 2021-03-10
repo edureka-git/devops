@@ -7,13 +7,13 @@
   <description>These are the rules by which J2EE/Web Applications will be built.   </description>
 
 
-<!-- Priorities 
+<!-- Priorities
 HIGH :1
-MEDIUM_HIGH:2           
-MEDIUM:3           
+MEDIUM_HIGH:2
+MEDIUM:3
 MEDIUM_LOW:4
-LOW : 5    
--->  
+LOW : 5
+-->
 <rule ref="rulesets/java/j2ee.xml/UseProperClassLoader"> <priority>3</priority></rule>
 <rule ref="rulesets/java/j2ee.xml/DoNotCallSystemExit"> <priority>3</priority></rule>
 <rule ref="rulesets/java/j2ee.xml/DoNotUseThreads"> <priority>3</priority></rule>
@@ -29,7 +29,7 @@ Scripts should be part of Tag Libraries, rather than part of JSP pages.
 		<properties>
 			<property name="xpath">
 				<value>
-					<![CDATA[ 
+					<![CDATA[
 // HtmlScript [ (@EndLine - @BeginLine > 10) ]
 				]]>
 				</value>
@@ -82,7 +82,7 @@ Scriptlets should be factored into Tag Libraries or JSP	declarations, rather tha
 			</property>
 		</properties>
 		<example>
-			<![CDATA[ 
+			<![CDATA[
 <HTML>
 <HEAD>
 <%
@@ -101,7 +101,7 @@ response.setHeader("Pragma", "No-cache");
 		message="Avoid having style information in JSP files."
 		class="net.sourceforge.pmd.lang.jsp.rule.basic.NoInlineStyleInformationRule"
 		externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-jsp/rules/jsp/basic.html#NoInlineStyleInformation">
-		<description><![CDATA[ 
+		<description><![CDATA[
 Style information should be put in CSS files, not in JSPs. Therefore, don't use <B> or <FONT> tags, or attributes like "align='center'". ]]>
 		</description>
 		<priority>3</priority>
@@ -171,7 +171,7 @@ through SSL. See http://support.microsoft.com/default.aspx?scid=kb;EN-US;Q261188
 		<properties>
 			<property name="xpath">
 				<value>
-					<![CDATA[ 
+					<![CDATA[
 	//Element[upper-case(@Name)="IFRAME"][count(Attribute[upper-case(@Name)="SRC" ]) = 0]
 					 ]]>
 				</value>
@@ -203,7 +203,7 @@ through SSL. See http://support.microsoft.com/default.aspx?scid=kb;EN-US;Q261188
 		<properties>
 			<property name="xpath">
 				<value>
-					<![CDATA[ 
+					<![CDATA[
 	//CommentTag
 					 ]]>
 				</value>
@@ -230,7 +230,7 @@ through SSL. See http://support.microsoft.com/default.aspx?scid=kb;EN-US;Q261188
 		</description>
 		<priority>3</priority>
 		<example>
-			<![CDATA[ 
+			<![CDATA[
 <%@ page import=\"com.foo.MyClass,com.foo.MyClass\"%><html><body><b><img src=\"<%=Some.get()%>/foo\">xx</img>text</b></body></html>
 			 ]]>
 		</example>
@@ -253,8 +253,8 @@ A missing 'meta' tag or page directive will trigger this rule, as well as a non-
 //Content[
 not(Element[@Name="meta"][
    Attribute[@Name="content"]/AttributeValue[contains(lower-case(@Image),"charset=utf-8")]
-]) 
-and 
+])
+and
     not(JspDirective[@Name='page']/JspDirectiveAttribute[@Name='contentType'][contains(lower-case(@Value),"charset=utf-8")])
 ]
                     ]]>
@@ -264,9 +264,9 @@ and
 		<example>
 			<![CDATA[
                 Most browsers should be able to interpret the following headers:
-                
+
                 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-                    
+
                 <meta http-equiv="Content-Type"  content="text/html; charset=UTF-8" />
             ]]>
 		</example>
@@ -296,14 +296,14 @@ Externalized script could be reused between pages.  Browsers can also cache the 
         <example>
             <![CDATA[
                 Most browsers should be able to interpret the following headers:
-                
+
                 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-                    
+
                 <meta http-equiv="Content-Type"  content="text/html; charset=UTF-8" />
             ]]>
         </example>
     </rule>
-    
+
     <rule
         name="NoUnsanitizedJSPExpression" since="5.1.4"
         class="net.sourceforge.pmd.lang.jsp.rule.basic.NoUnsanitizedJSPExpressionRule"

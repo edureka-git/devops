@@ -7,13 +7,13 @@
   <description>These rules check the security guidelines from Sun, published at http://java.sun.com/security/seccodeguide.html#gcg</description>
 
 
-<!-- Priorities 
+<!-- Priorities
 HIGH :1
-MEDIUM_HIGH:2           
-MEDIUM:3           
+MEDIUM_HIGH:2
+MEDIUM:3
 MEDIUM_LOW:4
-LOW : 5    
--->  
+LOW : 5
+-->
 <rule ref="rulesets/java/sunsecure.xml/MethodReturnsInternalArray"> <priority>3</priority></rule>
 <rule ref="rulesets/java/sunsecure.xml/ArrayIsStoredDirectly"> <priority>3</priority></rule>
 </ruleset>

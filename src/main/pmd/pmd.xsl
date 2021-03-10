@@ -269,7 +269,3 @@ doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
 		</xsl:attribute>
 	</xsl:template>
 </xsl:stylesheet>
-
-
-
-

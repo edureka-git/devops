@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 public class CaseInsensitiveComparator extends GenericComparator {
 
         private static final long serialVersionUID = -6836701171640412573L;
-        private static final Logger LOG =LoggerFactory.getLogger(CaseInsensitiveComparator.class); 
+        private static final Logger LOG =LoggerFactory.getLogger(CaseInsensitiveComparator.class);
 
         /*
          * This function call base GenericComparator(boolean sortAscending) class and set whether sorting is in ascending or descending
@@ -58,28 +58,28 @@ public class CaseInsensitiveComparator extends GenericComparator {
                                 v2=getValue(o2);
                                 returnType=getMethod(o1).getReturnType().getName();
                         }
-                        
+
                         CompareMode cm = findCompareMode(v1, v2);
                         if (!cm.equals(CompareMode.DEFAULT)) {
                                 return compareAlternate(cm);
                         }
                         response = compareActual(v1, v2, returnType);
-                } 
-                catch (NoSuchMethodException e){LOG.error(new LoggerStackTraceUtil().getErrorMessage(e));} 
-                catch (IllegalAccessException e){LOG.error(new LoggerStackTraceUtil().getErrorMessage(e));} 
-                catch (InvocationTargetException e){LOG.error(new LoggerStackTraceUtil().getErrorMessage(e));} 
+                }
+                catch (NoSuchMethodException e){LOG.error(new LoggerStackTraceUtil().getErrorMessage(e));}
+                catch (IllegalAccessException e){LOG.error(new LoggerStackTraceUtil().getErrorMessage(e));}
+                catch (InvocationTargetException e){LOG.error(new LoggerStackTraceUtil().getErrorMessage(e));}
                 return response;
         }
         /*
-         * This Method is the overridden compareActual of GenericComparator. 
+         * This Method is the overridden compareActual of GenericComparator.
          * If the data type is String then it convert string to upper case and compare it with other.
          */
         protected int compareActual(Object v1, Object v2, String returnType) {
                 String obj = returnType;
-                if ("java.lang.Object".equals(obj) && v1!=null) { 
-                        obj = v1.getClass().getName(); 
+                if ("java.lang.Object".equals(obj) && v1!=null) {
+                        obj = v1.getClass().getName();
                 }
-                int acutal = LESSER; 
+                int acutal = LESSER;
                 if (obj.equals(DATATYPE_INTEGER)) {
                         acutal = ((Integer) v1).compareTo((Integer) v2) * determinePosition();
                 } else if (obj.equals(DATATYPE_LONG)) {

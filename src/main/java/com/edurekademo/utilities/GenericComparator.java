@@ -9,10 +9,10 @@ import java.util.Date;
 * Sorting - Generic Comparator
 *
 * @author Seshagiri Sriram
-* @version 1.0 
+* @version 1.0
 * @since Janauary 12, 2015
-* 
-* This is an adaptation of a genenic comparator found on github linked from myjeeva.com 
+*
+* This is an adaptation of a genenic comparator found on github linked from myjeeva.com
 * Many thanks for the code!
 */
 
@@ -122,13 +122,13 @@ public class GenericComparator implements Comparator, Serializable {
 				v2=getValue(o2);
 				returnType=getMethod(o1).getReturnType().getName();
 			}
-			
+
 			CompareMode cm = findCompareMode(v1, v2);
 			if (!cm.equals(CompareMode.DEFAULT)) {
 				return compareAlternate(cm);
 			}
 			response = compareActual(v1, v2, returnType);
-		} 
+		}
 		// in JSE 1.7 the below is accepted
 		/*
 		catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException nsme) {
@@ -139,10 +139,10 @@ public class GenericComparator implements Comparator, Serializable {
 			LoggerStackTraceUtil.printErrorMessage(e);
 		}catch (InvocationTargetException e){
 			LoggerStackTraceUtil.printErrorMessage(e);
-		} 
+		}
 		return response;
 	}
-	
+
 //---------------------------------------------------------------------------------//
 // Private methods used by {@link com.myjeeva.comparator.GenericComparator} //
 //---------------------------------------------------------------------------------//
@@ -152,7 +152,7 @@ public class GenericComparator implements Comparator, Serializable {
 	 * @param cm - a enum used to idetify the position for sorting
 	 */
 	protected int compareAlternate(CompareMode cm) {
-		int compareState = LESSER;	
+		int compareState = LESSER;
 		switch(cm) {
 			case LESS_THAN:
 				compareState = LESSER * determinePosition();
@@ -176,11 +176,11 @@ public class GenericComparator implements Comparator, Serializable {
 	 */
 	private int compareActual(Object v1, Object v2, String returnType) {
 		String obj = returnType;
-		if ("java.lang.Object".equals(obj) && v1!=null) { 
-			 obj = v1.getClass().getName(); 
+		if ("java.lang.Object".equals(obj) && v1!=null) {
+			 obj = v1.getClass().getName();
 		}
 		int acutal = LESSER;
-		 
+
 			if (obj.equals(DATATYPE_INTEGER)) {
 				acutal = ((Integer) v1).compareTo((Integer) v2) * determinePosition();
 			} else if (obj.equals(DATATYPE_LONG)) {
@@ -209,7 +209,7 @@ public class GenericComparator implements Comparator, Serializable {
 		fieldName.append(name.substring(0, 1).toUpperCase()).append(name.substring(1));
 		return fieldName.toString();
 	}
-	
+
 	/**
 	 * fetching method from <code>Class</code> object through reflect
 	 *
