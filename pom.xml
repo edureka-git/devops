@@ -112,6 +112,13 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.7</version>
 		</dependency>
+	    <dependency>
+   <groupId>com.sun</groupId>
+   <artifactId>tools</artifactId>
+   <version>1.6.0</version>
+   <scope>system</scope>
+   <systemPath>${env.JAVA_HOME}/lib/tools.jar</systemPath>
+ </dependency>
 
 				<!-- TESTING -->
 		<dependency>
