@@ -3,12 +3,12 @@ package com.edurekademo.utilities;
 public class UnitDTO {
 
         private Integer empID;
-        private String empName; 
-        private Integer deptID; 
+        private String empName;
+        private Integer deptID;
         private String dateofJoining;
-        private Double spare; 
-        private Object spare2; 
-        
+        private Double spare;
+        private Object spare2;
+
         public Integer getEmpID() {
                 return empID;
         }
@@ -45,7 +45,7 @@ public class UnitDTO {
         public void setSpare2(Object spare2) {
                 this.spare2 = spare2;
         }
-        
-        public UnitDTO() { 
+
+        public UnitDTO() {
         }
 }

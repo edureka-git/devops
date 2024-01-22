@@ -7,13 +7,13 @@
   <description>These are the rules by which Applications will be built.   </description>
 
 
-<!-- Priorities 
+<!-- Priorities
 HIGH :1
-MEDIUM_HIGH:2           
-MEDIUM:3           
+MEDIUM_HIGH:2
+MEDIUM:3
 MEDIUM_LOW:4
-LOW : 5    
-Rule sets used as base:      
+LOW : 5
+Rule sets used as base:
 <ruleset>rulesets/java/codesize.xml</ruleset>
 <ruleset>rulesets/java/imports.xml</ruleset>
 <ruleset>rulesets/java/basic.xml</ruleset>
@@ -22,7 +22,7 @@ Rule sets used as base:
 <ruleset>rulesets/java/unusedcode.xml</ruleset>
 <ruleset>rulesets/java/strings.xml </ruleset>
 <ruleset>rulesets/java/design.xml</ruleset>
--->  
+-->
 <rule ref="rulesets/java/codesize.xml/NPathComplexity" message="The method {0}() has an NPath complexity of {1}. Recommended to have it less than 150"> <priority>3</priority></rule>
 <rule ref="rulesets/java/codesize.xml/ExcessiveMethodLength"><priority>3</priority></rule>
 <rule ref="rulesets/java/codesize.xml/ExcessiveParameterList"><priority>3</priority></rule>

@@ -21,7 +21,7 @@
             <name>Vaadin Pre-releases</name>
             <url>https://maven.vaadin.com/vaadin-prereleases</url>
         </repository>
-        <!-- Essential Vaadin artifacts are in maven central, but maven.vaadin.com 
+        <!-- Essential Vaadin artifacts are in maven central, but maven.vaadin.com
             contains a huge set of additional libraries. See vaadin.com/directory -->
        <repository>
             <id>vaadin-addons</id>
@@ -81,8 +81,8 @@
             <version>3.0.1</version>
             <scope>compile</scope>
         </dependency>
-        <!-- The huge set of awesome Java libraries are available as such 
-            for Vaadin developers, you should take the advantage of those. In this app 
+        <!-- The huge set of awesome Java libraries are available as such
+            for Vaadin developers, you should take the advantage of those. In this app
             we just use the commons-beanutils to help implementing the fake backend. -->
         <dependency>
             <groupId>commons-beanutils</groupId>
@@ -90,7 +90,7 @@
             <version>1.9.2</version>
             <type>jar</type>
         </dependency>
-		
+
 				<!-- LOGGING -->
 		<dependency>
 	<groupId>log4j</groupId>
@@ -173,7 +173,7 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.2.3.v20140905</version>
             </plugin>
-			
+
 						<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -195,8 +195,8 @@
         </plugins>
 		<finalName>addressbook</finalName>
     </build>
-	
-	  
+
+
     <reporting>
     <plugins>
       <plugin>
@@ -206,7 +206,7 @@
       </plugin>
     </plugins>
   </reporting>
-  
+
       <profiles>
         <profile>
             <id>development</id>
